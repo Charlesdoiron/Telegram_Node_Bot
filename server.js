@@ -42,7 +42,7 @@ const getIdeasByStatus = (chatId, status) => {
 	);
 };
 
-// Listener (handler) for telegram's /weather event
+// Listener (handler) for telegram's /status event
 
 bot.onText(/\/published/, (msg, match) => {
 	const chatId = msg.chat.id;
