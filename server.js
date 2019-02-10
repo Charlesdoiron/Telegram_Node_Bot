@@ -8,9 +8,6 @@ const ideasByStatus = status => `https://en-marche.fr/api/ideas-workshop/ideas?s
 
 // Template for Ideas Response
 const IdeasTemplate = (total_items, status) => {
-	// if (status === 'PENDING') {
-	// 	return `Il y'a ${total_items} idées en cours de publication `;
-	// }
 	if (status === 'PUBLISHED') {
 		return `Il y'a ${total_items} idées en cours de publication `;
 	} else if (status === 'FINALIZED') {
